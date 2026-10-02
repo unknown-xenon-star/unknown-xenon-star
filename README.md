@@ -1,130 +1,267 @@
-# Hey, I'm Xenon 👋
+<div align="center">
 
-### AI • Computer Vision • Robotics • Systems
+# `XENON`
 
-I build things at the intersection of **AI, computer vision, robotics, and low-level systems**.
+### AI · COMPUTER VISION · ROBOTICS · SYSTEMS
 
-Currently exploring how to build intelligent systems from the ground up — from algorithms and perception pipelines to autonomous robots and lightweight local AI.
+**Building intelligent systems from pixels to motion.**
 
----
+<br>
 
-## 🔬 What I'm Working On
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/)
+[![Python](https://img.shields.io/badge/Python-000?style=for-the-badge&logo=python&logoColor=3776AB)](https://python.org/)
+[![C++](https://img.shields.io/badge/C++-000?style=for-the-badge&logo=cplusplus&logoColor=00599C)](https://isocpp.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-000?style=for-the-badge&logo=opencv&logoColor=5C3EE8)](https://opencv.org/)
 
-- 🧠 **AI / LLMs** — model architecture, local inference, AI agents
-- 👁️ **Computer Vision** — stereo vision, depth estimation, object detection, visual odometry
-- 🤖 **Robotics** — autonomous navigation, sensor fusion, embedded systems
-- 🚁 **GPS-Free Navigation** — VIO, SLAM, IMU + camera fusion
-- ⚙️ **Systems** — performance optimization, CUDA, Linux, low-level tooling
-- 🧪 **Research** — experimenting with algorithms and building prototypes
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## `01 / ABOUT`
 
-### Languages
-`Python` `C++` `C` `JavaScript` `SQL`
+```text
+I build and experiment with intelligent systems.
 
-### AI / Computer Vision
-`PyTorch` `OpenCV` `YOLO` `MediaPipe` `NumPy`
+Computer Vision    →    3D Perception
+Robotics           →    Autonomous Systems
+AI / LLMs          →    Local Intelligence
+Embedded Systems   →    Hardware + Software
+```
 
-### Robotics
-`ROS` `STM32` `ESP32` `Arduino` `IMU` `SLAM` `VIO`
-
-### Tools & Systems
-`Linux` `WSL` `Git` `Docker` `CUDA` `VS Code`
+I like understanding systems from the algorithmic level down to the implementation rather than treating tools as black boxes.
 
 ---
 
-## 🚀 Projects
+## `02 / CURRENTLY BUILDING`
 
-### 👁️ Stereo Vision & Depth
-Building stereo vision pipelines involving:
+<table>
+<tr>
+<td width="50%">
+
+### 👁️ Stereo Vision
+
+```text
+Stereo Cameras
+      ↓
+Rectification
+      ↓
+Disparity
+      ↓
+Depth
+      ↓
+Confidence
+```
 
 - StereoBM / StereoSGBM
-- Dynamic-baseline depth estimation
-- Left-right consistency
-- Depth-confidence estimation
-- Confidence-aware depth filtering
-- Object-aware depth estimation
+- Dynamic-baseline depth
+- LR consistency
+- Depth confidence
+- 3D reconstruction
 
-### 🚁 GPS-Free Drone Navigation
-Exploring autonomous navigation using:
+</td>
+
+<td width="50%">
+
+### 🚁 Autonomous Navigation
 
 ```text
 Camera + IMU
-     ↓
+      ↓
 Visual Odometry
-     ↓
+      ↓
 Sensor Fusion
-     ↓
+      ↓
 SLAM
-     ↓
-3D Map
-     ↓
+      ↓
 Navigation
 ```
 
-### 🤖 Robotics & Embedded Systems
+- GPS-free navigation
+- VIO
+- IMU fusion
+- Mapping
+- Autonomous robotics
 
-Working with:
+</td>
+</tr>
 
-- STM32
-- ESP32
-- Motor control
-- PID controllers
-- Sensors
-- Robotic mechanisms
-- Autonomous systems
+<tr>
+<td>
 
----
-
-## 📚 Currently Learning
+### 🧠 Local AI
 
 ```text
-Computer Vision
-      ↓
-3D Vision
-      ↓
-Visual-Inertial Odometry
-      ↓
-SLAM
-      ↓
-Robotics
-      ↓
+Models
+  ↓
+Inference
+  ↓
+Agents
+  ↓
+Tools
+  ↓
 Autonomous Systems
 ```
 
-Alongside:
+Exploring lightweight local AI, LLM internals and agentic systems.
+
+</td>
+
+<td>
+
+### 🤖 Embedded Robotics
 
 ```text
-Deep Learning → Transformers → LLMs → AI Agents
+Sensors
+   ↓
+MCU
+   ↓
+Control
+   ↓
+Actuators
+```
+
+STM32 · ESP32 · PID · Motor Control · Sensors
+
+</td>
+</tr>
+</table>
+
+---
+
+## `03 / TECH STACK`
+
+### Languages
+
+![Python](https://img.shields.io/badge/Python-111?style=flat-square&logo=python)
+![C++](https://img.shields.io/badge/C++-111?style=flat-square&logo=cplusplus)
+![C](https://img.shields.io/badge/C-111?style=flat-square&logo=c)
+![JavaScript](https://img.shields.io/badge/JavaScript-111?style=flat-square&logo=javascript)
+
+### AI / Vision
+
+![PyTorch](https://img.shields.io/badge/PyTorch-111?style=flat-square&logo=pytorch)
+![OpenCV](https://img.shields.io/badge/OpenCV-111?style=flat-square&logo=opencv)
+![YOLO](https://img.shields.io/badge/YOLO-111?style=flat-square)
+![NumPy](https://img.shields.io/badge/NumPy-111?style=flat-square&logo=numpy)
+
+### Robotics / Systems
+
+![Linux](https://img.shields.io/badge/Linux-111?style=flat-square&logo=linux)
+![CUDA](https://img.shields.io/badge/CUDA-111?style=flat-square&logo=nvidia)
+![Git](https://img.shields.io/badge/Git-111?style=flat-square&logo=git)
+![STM32](https://img.shields.io/badge/STM32-111?style=flat-square)
+![ESP32](https://img.shields.io/badge/ESP32-111?style=flat-square&logo=espressif)
+
+---
+
+## `04 / SELECTED WORK`
+
+### `◉ Dynamic-Baseline Stereo Vision`
+
+**Depth estimation with confidence-aware feedback.**
+
+```text
+Stereo Input
+     │
+     ├──→ Disparity
+     │       │
+     │       └──→ Depth
+     │
+     └──→ Confidence
+              │
+              ├── LR Consistency
+              ├── Texture
+              ├── Gradient
+              └── Matching Quality
+                       │
+                       ▼
+                 Fused Confidence
 ```
 
 ---
 
-## ⚡ Philosophy
+### `◉ GPS-Free Drone Navigation`
 
-> Build it. Understand it. Break it. Rebuild it better.
+A perception stack exploring:
 
-I prefer understanding **how things work internally** rather than treating libraries and models as black boxes.
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
+`Camera → VIO → Sensor Fusion → SLAM → 3D Map → Navigation`
 
 ---
 
-## 🌐 Connect
+### `◉ Lightweight Local AI`
 
-[GitHub](https://github.com/YOUR_USERNAME) • [LinkedIn](YOUR_LINKEDIN_URL)
+Experimenting with:
+
+- Local LLM inference
+- Model optimization
+- AI agents
+- Tool calling
+- Lightweight models
+- AI-assisted development
 
 ---
 
-<p align="center">
-  <i>Building intelligent systems, one experiment at a time.</i>
-</p>
+## `05 / RESEARCH INTERESTS`
+
+```text
+Computer Vision
+├── Stereo Vision
+├── Depth Estimation
+├── Visual Odometry
+├── SLAM
+└── 3D Reconstruction
+
+Artificial Intelligence
+├── Deep Learning
+├── Transformers
+├── LLMs
+├── Agents
+└── Model Optimization
+
+Robotics
+├── Autonomous Navigation
+├── Sensor Fusion
+├── Embedded Control
+└── Human / Machine Interaction
+```
+
+---
+
+## `06 / GITHUB`
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=true&theme=transparent&title_color=58A6FF&text_color=8B949E&icon_color=58A6FF" height="170"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&hide_border=true&theme=transparent&title_color=58A6FF&text_color=8B949E" height="170"/>
+
+</div>
+
+---
+
+## `07 / CONTRIBUTIONS`
+
+<div align="center">
+
+![GitHub Streak](https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=transparent&hide_border=true)
+
+</div>
+
+---
+
+## `08 / CONNECT`
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-111?style=for-the-badge&logo=github)](https://github.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-111?style=for-the-badge&logo=linkedin)](https://linkedin.com/)
+
+<br><br>
+
+```text
+BUILD → TEST → BREAK → UNDERSTAND → REBUILD
+```
+
+### `⚡ Build it. Understand it. Break it.`
+
+</div>
